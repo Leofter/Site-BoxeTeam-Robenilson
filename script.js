@@ -12,7 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
     const targetElement = document.querySelector(targetId);
     if (!targetElement) return;
-
     event.preventDefault();
     const headerOffset = 72;
     const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
